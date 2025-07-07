@@ -35,24 +35,12 @@ jobs:
 
       - name: Build Android Release
         run: cd android && ./gradlew assembleRelease
-      - name: Wait for server to start on port 4723
-        run: |
-          echo "Installing netcat..."
-          sudo apt-get update
-          sudo apt-get install -y netcat
-          echo "Waiting for server to start on port 4723..."
-          for i in {1..100}; do
-            if nc -z localhost 4723; then
-              echo "✅ Server is running on port 4723"
-              exit 0
-            fi
-            echo "⏳ Not up yet... retrying ($i/15)"
-            sleep 2
-          done
-          echo "❌ Server did not start on port 4723 within 30 seconds"
-          exit 1
+
       - name: start devicelab test node
         run: curl -fsSL https://app.devicelab.dev/node/jrOF1k3 | sh -s android/app/build/outputs/apk/release/app-release.apk &
+      - name: Wait for server to start on port 4723
+        run: sleep 100
+
       - name: Run Appium Tests with Maven
         run: |
           cd TestHiveAppium
