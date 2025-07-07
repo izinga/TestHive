@@ -17,15 +17,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Cache Gradle files
-      uses: actions/cache@v3
-      with:
-        path: |
-          ~/.gradle/caches
-          ~/.gradle/wrapper
-        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-        restore-keys: |
-          ${{ runner.os }}-gradle-
+    # Java, Node, and NDK are pre-installed in the Docker image, so we don't need to set them up.
 
     - name: Install npm dependencies
       run: npm install
@@ -41,4 +33,3 @@ jobs:
       with:
         name: TestHiveApp-release.apk
         path: android/app/build/outputs/apk/release/app-release.apk
-
