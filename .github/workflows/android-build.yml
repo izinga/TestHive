@@ -37,9 +37,12 @@ jobs:
         run: cd android && ./gradlew assembleRelease
       - name: Wait for server to start on port 4723
         run: |
+          echo "Installing netcat..."
+          sudo apt-get update
+          sudo apt-get install -y netcat
           echo "Waiting for server to start on port 4723..."
           for i in {1..100}; do
-            if lsof -i :4723; then
+            if nc -z localhost 4723; then
               echo "✅ Server is running on port 4723"
               exit 0
             fi
