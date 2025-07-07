@@ -4,6 +4,7 @@
 
 # Xcode
 #
+TestHiveAppium/target/
 build/
 *.pbxuser
 !default.pbxuser
