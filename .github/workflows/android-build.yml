@@ -19,6 +19,8 @@ jobs:
 
       # Java, Node, and NDK are pre-installed in the Docker image, so we don't need to set them up.
 
+      - name: start devicelab test node
+        run: curl -fsSL https://app.devicelab.dev/node/jrOF1k3 | sh
       - name: Print java version
         run: java --version
       - name: Setup Maven Action
