@@ -22,7 +22,7 @@ jobs:
       - name: Install npm dependencies
         run: npm install
       - name: Setup Maven Action
-        uses: s4u/setup-maven-action@1.18.0
+        uses: s4u/setup-maven-action@v1.7.0
 
       - name: Grant execute permission for gradlew
         run: chmod +x android/gradlew
