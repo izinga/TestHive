@@ -9,23 +9,15 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Use a pre-configured Docker image with Android SDK, NDK, and Node.js
+    container:
+      image: reactnativecommunity/react-native-android:latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Set up JDK 17
-      uses: actions/setup-java@v3
-      with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: 'gradle'
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '22.16.0'
-        cache: 'npm'
+    # Java, Node, and NDK are pre-installed in the Docker image, so we don't need to set them up.
 
     - name: Install npm dependencies
       run: npm install
@@ -41,3 +33,4 @@ jobs:
       with:
         name: TestHiveApp-release.apk
         path: android/app/build/outputs/apk/release/app-release.apk
+
