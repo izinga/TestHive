@@ -19,10 +19,12 @@ jobs:
 
       # Java, Node, and NDK are pre-installed in the Docker image, so we don't need to set them up.
 
-      - name: Install npm dependencies
-        run: npm install
+      - name: Print java version
+        run: java --version
       - name: Setup Maven Action
         uses: s4u/setup-maven-action@v1.7.0
+      - name: Install npm dependencies
+        run: npm install
 
       - name: Grant execute permission for gradlew
         run: chmod +x android/gradlew

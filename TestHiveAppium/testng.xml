@@ -5,5 +5,10 @@
         <classes>
             <class name="com.testhive.tests.SplashTests" />
             <class name="com.testhive.tests.LoginTests" />
+            <class name="com.testhive.tests.ProductTests" />
+            <class name="com.testhive.tests.ProductDetailTests" />
+            <class name="com.testhive.tests.CartTests" />
+            <class name="com.testhive.tests.CheckoutTests" />
+        </classes>
     </test>
 </suite>
