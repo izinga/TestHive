@@ -1,0 +1,13 @@
+com/testhive/tests/ProductTests.class
+com/testhive/tests/CartTests.class
+com/testhive/pages/LoginPage.class
+com/testhive/tests/SplashTests.class
+com/testhive/pages/ProductDetailPage.class
+com/testhive/pages/CheckoutPage.class
+com/testhive/tests/ProductDetailTests.class
+com/testhive/base/BaseTest.class
+com/testhive/tests/LoginTests.class
+com/testhive/pages/ProductsPage.class
+com/testhive/pages/CartPage.class
+com/testhive/tests/CheckoutTests.class
+com/testhive/pages/SplashScreenPage.class

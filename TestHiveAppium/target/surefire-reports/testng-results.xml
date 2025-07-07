@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="31" passed="20" failed="11" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-08T03:12:09 IST" name="TestHiveApp End-to-End Test Suite" finished-at="2025-07-08T03:20:54 IST" duration-ms="524952">
+    <groups>
+    </groups>
+    <test started-at="2025-07-08T03:12:09 IST" name="All Tests" finished-at="2025-07-08T03:20:54 IST" duration-ms="524952">
+      <class name="com.testhive.tests.CheckoutTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.CheckoutTests@1184ab05]" started-at="2025-07-08T03:19:23 IST" name="setUp" finished-at="2025-07-08T03:19:26 IST" duration-ms="2908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setupCheckoutTests()[pri:0, instance:com.testhive.tests.CheckoutTests@1184ab05]" started-at="2025-07-08T03:19:26 IST" name="setupCheckoutTests" finished-at="2025-07-08T03:19:34 IST" duration-ms="8907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCheckoutTests -->
+        <test-method signature="verifyBackToHomeClearsCart()[pri:0, instance:com.testhive.tests.CheckoutTests@1184ab05]" started-at="2025-07-08T03:19:34 IST" name="verifyBackToHomeClearsCart" description="TC-CHECKOUT-06: Verify &#039;Back to Products&#039; clears cart and navigates home." finished-at="2025-07-08T03:19:58 IST" duration-ms="23292" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Cart was not empty after completing an order. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Cart was not empty after completing an order. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at com.testhive.tests.CheckoutTests.verifyBackToHomeClearsCart(CheckoutTests.java:83)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBackToHomeClearsCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.CheckoutTests@1184ab05]" started-at="2025-07-08T03:19:58 IST" name="tearDown" finished-at="2025-07-08T03:19:58 IST" duration-ms="523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.CheckoutTests@1184ab05]" started-at="2025-07-08T03:19:58 IST" name="setUp" finished-at="2025-07-08T03:20:01 IST" duration-ms="3057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setupCheckoutTests()[pri:0, instance:com.testhive.tests.CheckoutTests@1184ab05]" started-at="2025-07-08T03:20:01 IST" name="setupCheckoutTests" finished-at="2025-07-08T03:20:10 IST" duration-ms="9137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCheckoutTests -->
+        <test-method signature="verifyNextButtonIsDisabledForIncompleteAddress()[pri:0, instance:com.testhive.tests.CheckoutTests@1184ab05]" started-at="2025-07-08T03:20:10 IST" name="verifyNextButtonIsDisabledForIncompleteAddress" description="TC-CHECKOUT-02: Verify &#039;Next: Payment&#039; button is disabled until form is complete." finished-at="2025-07-08T03:20:15 IST" duration-ms="4261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNextButtonIsDisabledForIncompleteAddress -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.CheckoutTests@1184ab05]" started-at="2025-07-08T03:20:15 IST" name="tearDown" finished-at="2025-07-08T03:20:15 IST" duration-ms="543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.CheckoutTests@1184ab05]" started-at="2025-07-08T03:20:15 IST" name="setUp" finished-at="2025-07-08T03:20:18 IST" duration-ms="2989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setupCheckoutTests()[pri:0, instance:com.testhive.tests.CheckoutTests@1184ab05]" started-at="2025-07-08T03:20:18 IST" name="setupCheckoutTests" finished-at="2025-07-08T03:20:27 IST" duration-ms="9023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCheckoutTests -->
+        <test-method signature="verifyPayNowButtonIsDisabledForIncompletePayment()[pri:0, instance:com.testhive.tests.CheckoutTests@1184ab05]" started-at="2025-07-08T03:20:27 IST" name="verifyPayNowButtonIsDisabledForIncompletePayment" description="TC-CHECKOUT-04: Verify &#039;Pay Now&#039; button is disabled until form is complete." finished-at="2025-07-08T03:20:34 IST" duration-ms="6226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPayNowButtonIsDisabledForIncompletePayment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.CheckoutTests@1184ab05]" started-at="2025-07-08T03:20:34 IST" name="tearDown" finished-at="2025-07-08T03:20:34 IST" duration-ms="553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.CheckoutTests@1184ab05]" started-at="2025-07-08T03:20:34 IST" name="setUp" finished-at="2025-07-08T03:20:37 IST" duration-ms="2895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setupCheckoutTests()[pri:0, instance:com.testhive.tests.CheckoutTests@1184ab05]" started-at="2025-07-08T03:20:37 IST" name="setupCheckoutTests" finished-at="2025-07-08T03:20:47 IST" duration-ms="9528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCheckoutTests -->
+        <test-method signature="verifySuccessfulCheckoutFlow()[pri:0, instance:com.testhive.tests.CheckoutTests@1184ab05]" started-at="2025-07-08T03:20:47 IST" name="verifySuccessfulCheckoutFlow" description="TC-CHECKOUT-01, 03, 05: Verify successful end-to-end checkout flow." finished-at="2025-07-08T03:20:54 IST" duration-ms="7084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulCheckoutFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.CheckoutTests@1184ab05]" started-at="2025-07-08T03:20:54 IST" name="tearDown" finished-at="2025-07-08T03:20:54 IST" duration-ms="568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testhive.tests.CheckoutTests -->
+      <class name="com.testhive.tests.LoginTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:12:25 IST" name="setUp" finished-at="2025-07-08T03:12:28 IST" duration-ms="2981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="emptyCredentials()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:12:28 IST" name="emptyCredentials" description="TC-LOGIN-05: Verify error with empty credentials." finished-at="2025-07-08T03:12:32 IST" duration-ms="3602" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error message for empty credentials was not displayed or was incorrect. expected [Invalid username or password] but found [Username is required]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error message for empty credentials was not displayed or was incorrect. expected [Invalid username or password] but found [Username is required]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at com.testhive.tests.LoginTests.emptyCredentials(LoginTests.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:12:32 IST" name="tearDown" finished-at="2025-07-08T03:12:32 IST" duration-ms="549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:12:32 IST" name="setUp" finished-at="2025-07-08T03:12:35 IST" duration-ms="2936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="errorMessageDisappearsOnTyping()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:12:35 IST" name="errorMessageDisappearsOnTyping" description="TC-LOGIN-06: Verify error message disappears on typing." finished-at="2025-07-08T03:12:59 IST" duration-ms="23646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorMessageDisappearsOnTyping -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:12:59 IST" name="tearDown" finished-at="2025-07-08T03:12:59 IST" duration-ms="536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:12:59 IST" name="setUp" finished-at="2025-07-08T03:13:02 IST" duration-ms="3039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidPassword()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:13:02 IST" name="invalidPassword" description="TC-LOGIN-04: Verify error with invalid password." finished-at="2025-07-08T03:13:10 IST" duration-ms="7858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:13:10 IST" name="tearDown" finished-at="2025-07-08T03:13:11 IST" duration-ms="564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:13:11 IST" name="setUp" finished-at="2025-07-08T03:13:14 IST" duration-ms="3085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidUsername()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:13:14 IST" name="invalidUsername" description="TC-LOGIN-03: Verify error with invalid username." finished-at="2025-07-08T03:13:22 IST" duration-ms="7809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsername -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:13:22 IST" name="tearDown" finished-at="2025-07-08T03:13:22 IST" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:13:22 IST" name="setUp" finished-at="2025-07-08T03:13:25 IST" duration-ms="2890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="passwordFieldIsMasked()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:13:25 IST" name="passwordFieldIsMasked" description="TC-LOGIN-07: Verify password field is masked." finished-at="2025-07-08T03:13:28 IST" duration-ms="2738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordFieldIsMasked -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:13:28 IST" name="tearDown" finished-at="2025-07-08T03:13:28 IST" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:13:28 IST" name="setUp" finished-at="2025-07-08T03:13:31 IST" duration-ms="2992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="successfulLogin()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:13:31 IST" name="successfulLogin" description="TC-LOGIN-01 &amp; TC-LOGIN-02: Verify successful login and navigation." finished-at="2025-07-08T03:13:39 IST" duration-ms="8047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:13:39 IST" name="tearDown" finished-at="2025-07-08T03:13:40 IST" duration-ms="456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:13:40 IST" name="setUp" finished-at="2025-07-08T03:13:43 IST" duration-ms="2934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLogoutFunctionality()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:13:43 IST" name="verifyLogoutFunctionality" description="TC-GEN-01: Verify that the logout functionality works correctly." finished-at="2025-07-08T03:14:06 IST" duration-ms="23144" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.Button[@text='Logout'] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '24.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: .MainActivity, appium:appPackage: com.testhiveapp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: .MainActivity, appPackage: com.testhiveapp, automationName: UiAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 4a, appium:deviceName: 11171JEC200939, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 11171JEC200939, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2204, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d9b8e1e9-b2b0-4aa5-82b6-5972c200b210]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.Button[@text='Logout'] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '24.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: .MainActivity, appium:appPackage: com.testhiveapp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: .MainActivity, appPackage: com.testhiveapp, automationName: UiAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 4a, appium:deviceName: 11171JEC200939, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 11171JEC200939, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2204, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d9b8e1e9-b2b0-4aa5-82b6-5972c200b210
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.testhive.pages.ProductsPage.logout(ProductsPage.java:127)
+at com.testhive.tests.LoginTests.verifyLogoutFunctionality(LoginTests.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoutFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.LoginTests@20d28811]" started-at="2025-07-08T03:14:06 IST" name="tearDown" finished-at="2025-07-08T03:14:06 IST" duration-ms="600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testhive.tests.LoginTests -->
+      <class name="com.testhive.tests.ProductDetailTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.ProductDetailTests@460d0a57]" started-at="2025-07-08T03:16:54 IST" name="setUp" finished-at="2025-07-08T03:16:56 IST" duration-ms="2893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setupProductDetailPage()[pri:0, instance:com.testhive.tests.ProductDetailTests@460d0a57]" started-at="2025-07-08T03:16:56 IST" name="setupProductDetailPage" finished-at="2025-07-08T03:17:05 IST" duration-ms="8588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupProductDetailPage -->
+        <test-method signature="verifyBackButtonNavigation()[pri:0, instance:com.testhive.tests.ProductDetailTests@460d0a57]" started-at="2025-07-08T03:17:05 IST" name="verifyBackButtonNavigation" description="TC-DETAIL-02: Verify that the &#039;Back&#039; button successfully navigates the user back to the Products page." finished-at="2025-07-08T03:17:07 IST" duration-ms="1709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBackButtonNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.ProductDetailTests@460d0a57]" started-at="2025-07-08T03:17:07 IST" name="tearDown" finished-at="2025-07-08T03:17:07 IST" duration-ms="526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.ProductDetailTests@460d0a57]" started-at="2025-07-08T03:17:07 IST" name="setUp" finished-at="2025-07-08T03:17:10 IST" duration-ms="2976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setupProductDetailPage()[pri:0, instance:com.testhive.tests.ProductDetailTests@460d0a57]" started-at="2025-07-08T03:17:10 IST" name="setupProductDetailPage" finished-at="2025-07-08T03:17:18 IST" duration-ms="8093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupProductDetailPage -->
+        <test-method signature="verifyProductDetails()[pri:0, instance:com.testhive.tests.ProductDetailTests@460d0a57]" started-at="2025-07-08T03:17:18 IST" name="verifyProductDetails" description="TC-DETAIL-01: Verify that the correct product name, description, and price are displayed." finished-at="2025-07-08T03:17:34 IST" duration-ms="15910" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Product name is incorrect. expected [Maestro] but found [Product name not found.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Product name is incorrect. expected [Maestro] but found [Product name not found.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at com.testhive.tests.ProductDetailTests.verifyProductDetails(ProductDetailTests.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.ProductDetailTests@460d0a57]" started-at="2025-07-08T03:17:34 IST" name="tearDown" finished-at="2025-07-08T03:17:35 IST" duration-ms="566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testhive.tests.ProductDetailTests -->
+      <class name="com.testhive.tests.CartTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:17:35 IST" name="setUp" finished-at="2025-07-08T03:17:38 IST" duration-ms="3043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setupCartTests()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:17:38 IST" name="setupCartTests" finished-at="2025-07-08T03:17:44 IST" duration-ms="6109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCartTests -->
+        <test-method signature="verifyCartQuantityControls()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:17:44 IST" name="verifyCartQuantityControls" description="TC-CART-04: Verify that the quantity controls on the cart page work correctly." finished-at="2025-07-08T03:17:48 IST" duration-ms="4385" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Grand total did not update after increasing quantity. expected [Total: $16.20] but found [$16.20]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Grand total did not update after increasing quantity. expected [Total: $16.20] but found [$16.20]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at com.testhive.tests.CartTests.verifyCartQuantityControls(CartTests.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartQuantityControls -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:17:48 IST" name="tearDown" finished-at="2025-07-08T03:17:49 IST" duration-ms="552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:17:49 IST" name="setUp" finished-at="2025-07-08T03:17:52 IST" duration-ms="2861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setupCartTests()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:17:52 IST" name="setupCartTests" finished-at="2025-07-08T03:17:58 IST" duration-ms="6073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCartTests -->
+        <test-method signature="verifyEmptyCartMessage()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:17:58 IST" name="verifyEmptyCartMessage" description="TC-CART-05: Verify &#039;Your cart is empty&#039; message." finished-at="2025-07-08T03:18:15 IST" duration-ms="17601" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA['Your cart is empty' message was not displayed. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 'Your cart is empty' message was not displayed. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at com.testhive.tests.CartTests.verifyEmptyCartMessage(CartTests.java:71)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmptyCartMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:18:15 IST" name="tearDown" finished-at="2025-07-08T03:18:16 IST" duration-ms="456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:18:16 IST" name="setUp" finished-at="2025-07-08T03:18:19 IST" duration-ms="2857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setupCartTests()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:18:19 IST" name="setupCartTests" finished-at="2025-07-08T03:18:25 IST" duration-ms="6115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCartTests -->
+        <test-method signature="verifyGrandTotal()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:18:25 IST" name="verifyGrandTotal" description="TC-CART-03: Verify that the grand total for all items is calculated correctly." finished-at="2025-07-08T03:18:29 IST" duration-ms="4105" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Grand total is incorrect. expected [Total: $13.49] but found [$13.49]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Grand total is incorrect. expected [Total: $13.49] but found [$13.49]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at com.testhive.tests.CartTests.verifyGrandTotal(CartTests.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGrandTotal -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:18:29 IST" name="tearDown" finished-at="2025-07-08T03:18:29 IST" duration-ms="461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:18:29 IST" name="setUp" finished-at="2025-07-08T03:18:32 IST" duration-ms="2876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setupCartTests()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:18:32 IST" name="setupCartTests" finished-at="2025-07-08T03:18:38 IST" duration-ms="6032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCartTests -->
+        <test-method signature="verifyItemsListedInCart()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:18:38 IST" name="verifyItemsListedInCart" description="TC-CART-01: Verify that added items are correctly listed in the cart." finished-at="2025-07-08T03:18:43 IST" duration-ms="4162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyItemsListedInCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:18:43 IST" name="tearDown" finished-at="2025-07-08T03:18:43 IST" duration-ms="530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:18:43 IST" name="setUp" finished-at="2025-07-08T03:18:46 IST" duration-ms="2882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setupCartTests()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:18:46 IST" name="setupCartTests" finished-at="2025-07-08T03:18:53 IST" duration-ms="6982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCartTests -->
+        <test-method signature="verifyLineItemTotal()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:18:53 IST" name="verifyLineItemTotal" description="TC-CART-02: Verify that the total cost for each item line is calculated correctly." finished-at="2025-07-08T03:18:57 IST" duration-ms="4407" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Appium line item total is incorrect. expected [$7.50 x 2 = $15.00] but found [Mobile Testing]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Appium line item total is incorrect. expected [$7.50 x 2 = $15.00] but found [Mobile Testing]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at com.testhive.tests.CartTests.verifyLineItemTotal(CartTests.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLineItemTotal -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:18:57 IST" name="tearDown" finished-at="2025-07-08T03:18:58 IST" duration-ms="537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:18:58 IST" name="setUp" finished-at="2025-07-08T03:19:01 IST" duration-ms="2967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setupCartTests()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:19:01 IST" name="setupCartTests" finished-at="2025-07-08T03:19:07 IST" duration-ms="6144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCartTests -->
+        <test-method signature="verifyNavigationToCheckout()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:19:07 IST" name="verifyNavigationToCheckout" description="TC-CART-06: Verify navigation to the checkout address page." finished-at="2025-07-08T03:19:22 IST" duration-ms="15170" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '24.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f040cfd9-8767-4de8-9c63-72470966a740, findElement {value=add-to-cart-button-TestNG, using=accessibility id}]
+Capabilities {appium:appActivity: .MainActivity, appium:appPackage: com.testhiveapp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: .MainActivity, appPackage: com.testhiveapp, automationName: UiAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 4a, appium:deviceName: 11171JEC200939, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 11171JEC200939, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2204, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f040cfd9-8767-4de8-9c63-72470966a740]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '24.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f040cfd9-8767-4de8-9c63-72470966a740, findElement {value=add-to-cart-button-TestNG, using=accessibility id}]
+Capabilities {appium:appActivity: .MainActivity, appium:appPackage: com.testhiveapp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: .MainActivity, appPackage: com.testhiveapp, automationName: UiAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 4a, appium:deviceName: 11171JEC200939, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 11171JEC200939, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2204, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f040cfd9-8767-4de8-9c63-72470966a740
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at com.testhive.pages.ProductsPage.clickAddButton(ProductsPage.java:38)
+at com.testhive.tests.CartTests.verifyNavigationToCheckout(CartTests.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationToCheckout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.CartTests@47d90b9e]" started-at="2025-07-08T03:19:22 IST" name="tearDown" finished-at="2025-07-08T03:19:23 IST" duration-ms="490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testhive.tests.CartTests -->
+      <class name="com.testhive.tests.ProductTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:14:06 IST" name="setUp" finished-at="2025-07-08T03:14:10 IST" duration-ms="4034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginAndGoToProductsPage()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:14:10 IST" name="loginAndGoToProductsPage" finished-at="2025-07-08T03:14:16 IST" duration-ms="6130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndGoToProductsPage -->
+        <test-method signature="verifyAddToCartButtonChanges()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:14:16 IST" name="verifyAddToCartButtonChanges" description="TC-PROD-04: Verify &#039;Add&#039; button changes to quantity control." finished-at="2025-07-08T03:14:19 IST" duration-ms="2607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddToCartButtonChanges -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:14:19 IST" name="tearDown" finished-at="2025-07-08T03:14:20 IST" duration-ms="502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:14:20 IST" name="setUp" finished-at="2025-07-08T03:14:23 IST" duration-ms="2979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginAndGoToProductsPage()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:14:23 IST" name="loginAndGoToProductsPage" finished-at="2025-07-08T03:14:29 IST" duration-ms="6068" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndGoToProductsPage -->
+        <test-method signature="verifyCartBadgeUpdates()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:14:29 IST" name="verifyCartBadgeUpdates" description="TC-PROD-05: Verify cart badge updates correctly." finished-at="2025-07-08T03:14:46 IST" duration-ms="17417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartBadgeUpdates -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:14:46 IST" name="tearDown" finished-at="2025-07-08T03:14:47 IST" duration-ms="530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:14:47 IST" name="setUp" finished-at="2025-07-08T03:14:49 IST" duration-ms="2886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginAndGoToProductsPage()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:14:49 IST" name="loginAndGoToProductsPage" finished-at="2025-07-08T03:14:55 IST" duration-ms="5611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndGoToProductsPage -->
+        <test-method signature="verifyDecreaseQuantity()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:14:55 IST" name="verifyDecreaseQuantity" description="TC-PROD-07: Verify decreasing item quantity." finished-at="2025-07-08T03:15:10 IST" duration-ms="15200" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '24.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [305f78b6-a6a4-4338-bd3c-1f3addfaaf30, findElement {value=add-to-cart-button-Jest, using=accessibility id}]
+Capabilities {appium:appActivity: .MainActivity, appium:appPackage: com.testhiveapp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: .MainActivity, appPackage: com.testhiveapp, automationName: UiAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 4a, appium:deviceName: 11171JEC200939, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 11171JEC200939, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2204, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 305f78b6-a6a4-4338-bd3c-1f3addfaaf30]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '24.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [305f78b6-a6a4-4338-bd3c-1f3addfaaf30, findElement {value=add-to-cart-button-Jest, using=accessibility id}]
+Capabilities {appium:appActivity: .MainActivity, appium:appPackage: com.testhiveapp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: .MainActivity, appPackage: com.testhiveapp, automationName: UiAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 4a, appium:deviceName: 11171JEC200939, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 11171JEC200939, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2204, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 305f78b6-a6a4-4338-bd3c-1f3addfaaf30
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at com.testhive.pages.ProductsPage.clickAddButton(ProductsPage.java:38)
+at com.testhive.tests.ProductTests.verifyDecreaseQuantity(ProductTests.java:68)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDecreaseQuantity -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:15:10 IST" name="tearDown" finished-at="2025-07-08T03:15:11 IST" duration-ms="459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:15:11 IST" name="setUp" finished-at="2025-07-08T03:15:14 IST" duration-ms="2854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginAndGoToProductsPage()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:15:14 IST" name="loginAndGoToProductsPage" finished-at="2025-07-08T03:15:20 IST" duration-ms="6098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndGoToProductsPage -->
+        <test-method signature="verifyIncreaseQuantity()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:15:20 IST" name="verifyIncreaseQuantity" description="TC-PROD-06: Verify increasing item quantity." finished-at="2025-07-08T03:15:35 IST" duration-ms="15126" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '24.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [45c2789e-9d3f-4abd-bcb7-6a4914a28e9c, findElement {value=add-to-cart-button-Playwright, using=accessibility id}]
+Capabilities {appium:appActivity: .MainActivity, appium:appPackage: com.testhiveapp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: .MainActivity, appPackage: com.testhiveapp, automationName: UiAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 4a, appium:deviceName: 11171JEC200939, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 11171JEC200939, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2204, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 45c2789e-9d3f-4abd-bcb7-6a4914a28e9c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '24.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [45c2789e-9d3f-4abd-bcb7-6a4914a28e9c, findElement {value=add-to-cart-button-Playwright, using=accessibility id}]
+Capabilities {appium:appActivity: .MainActivity, appium:appPackage: com.testhiveapp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: .MainActivity, appPackage: com.testhiveapp, automationName: UiAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 4a, appium:deviceName: 11171JEC200939, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 11171JEC200939, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2204, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 45c2789e-9d3f-4abd-bcb7-6a4914a28e9c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at com.testhive.pages.ProductsPage.clickAddButton(ProductsPage.java:38)
+at com.testhive.tests.ProductTests.verifyIncreaseQuantity(ProductTests.java:60)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIncreaseQuantity -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:15:35 IST" name="tearDown" finished-at="2025-07-08T03:15:35 IST" duration-ms="557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:15:35 IST" name="setUp" finished-at="2025-07-08T03:15:38 IST" duration-ms="3084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginAndGoToProductsPage()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:15:38 IST" name="loginAndGoToProductsPage" finished-at="2025-07-08T03:15:44 IST" duration-ms="5592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndGoToProductsPage -->
+        <test-method signature="verifyNavigationToCart()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:15:44 IST" name="verifyNavigationToCart" description="TC-PROD-09: Verify navigation to cart page." finished-at="2025-07-08T03:15:47 IST" duration-ms="2598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:15:47 IST" name="tearDown" finished-at="2025-07-08T03:15:47 IST" duration-ms="576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:15:47 IST" name="setUp" finished-at="2025-07-08T03:15:50 IST" duration-ms="2932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginAndGoToProductsPage()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:15:50 IST" name="loginAndGoToProductsPage" finished-at="2025-07-08T03:15:56 IST" duration-ms="5617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndGoToProductsPage -->
+        <test-method signature="verifyNavigationToProductDetail()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:15:56 IST" name="verifyNavigationToProductDetail" description="TC-PROD-08: Verify navigation to product detail page." finished-at="2025-07-08T03:15:58 IST" duration-ms="2672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationToProductDetail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:15:58 IST" name="tearDown" finished-at="2025-07-08T03:15:59 IST" duration-ms="553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:15:59 IST" name="setUp" finished-at="2025-07-08T03:16:02 IST" duration-ms="2938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginAndGoToProductsPage()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:16:02 IST" name="loginAndGoToProductsPage" finished-at="2025-07-08T03:16:07 IST" duration-ms="5539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndGoToProductsPage -->
+        <test-method signature="verifyNoProductsFoundMessage()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:16:07 IST" name="verifyNoProductsFoundMessage" description="TC-PROD-03: Verify &#039;No products found&#039; message for invalid search." finished-at="2025-07-08T03:16:11 IST" duration-ms="3855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNoProductsFoundMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:16:11 IST" name="tearDown" finished-at="2025-07-08T03:16:12 IST" duration-ms="496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:16:12 IST" name="setUp" finished-at="2025-07-08T03:16:15 IST" duration-ms="2953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginAndGoToProductsPage()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:16:15 IST" name="loginAndGoToProductsPage" finished-at="2025-07-08T03:16:21 IST" duration-ms="6070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndGoToProductsPage -->
+        <test-method signature="verifyProductListIsDisplayed()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:16:21 IST" name="verifyProductListIsDisplayed" description="TC-PROD-01: Verify that all products are listed on the page after a successful login." finished-at="2025-07-08T03:16:23 IST" duration-ms="2137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductListIsDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:16:23 IST" name="tearDown" finished-at="2025-07-08T03:16:24 IST" duration-ms="528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:16:24 IST" name="setUp" finished-at="2025-07-08T03:16:26 IST" duration-ms="2966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginAndGoToProductsPage()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:16:26 IST" name="loginAndGoToProductsPage" finished-at="2025-07-08T03:16:34 IST" duration-ms="7258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndGoToProductsPage -->
+        <test-method signature="verifySearchFiltersProducts()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:16:34 IST" name="verifySearchFiltersProducts" description="TC-PROD-02: Verify search functionality with a valid term." finished-at="2025-07-08T03:16:53 IST" duration-ms="19279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFiltersProducts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.ProductTests@3967e60c]" started-at="2025-07-08T03:16:53 IST" name="tearDown" finished-at="2025-07-08T03:16:54 IST" duration-ms="578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testhive.tests.ProductTests -->
+      <class name="com.testhive.tests.SplashTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.SplashTests@54c562f7]" started-at="2025-07-08T03:12:09 IST" name="setUp" finished-at="2025-07-08T03:12:12 IST" duration-ms="3207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyNavigationToLogin()[pri:0, instance:com.testhive.tests.SplashTests@54c562f7]" started-at="2025-07-08T03:12:12 IST" name="verifyNavigationToLogin" description="TC-SPLASH-03: Verify navigation to the login screen after splash." finished-at="2025-07-08T03:12:15 IST" duration-ms="2773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationToLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.SplashTests@54c562f7]" started-at="2025-07-08T03:12:15 IST" name="tearDown" finished-at="2025-07-08T03:12:16 IST" duration-ms="476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.SplashTests@54c562f7]" started-at="2025-07-08T03:12:16 IST" name="setUp" finished-at="2025-07-08T03:12:19 IST" duration-ms="2871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySplashScreenContent()[pri:0, instance:com.testhive.tests.SplashTests@54c562f7]" started-at="2025-07-08T03:12:19 IST" name="verifySplashScreenContent" description="TC-SPLASH-02: Verify that the TestHive logo and name are visible on the splash screen." finished-at="2025-07-08T03:12:19 IST" duration-ms="919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySplashScreenContent -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.SplashTests@54c562f7]" started-at="2025-07-08T03:12:19 IST" name="tearDown" finished-at="2025-07-08T03:12:20 IST" duration-ms="424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testhive.tests.SplashTests@54c562f7]" started-at="2025-07-08T03:12:20 IST" name="setUp" finished-at="2025-07-08T03:12:24 IST" duration-ms="3929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySplashScreenIsDisplayed()[pri:0, instance:com.testhive.tests.SplashTests@54c562f7]" started-at="2025-07-08T03:12:24 IST" name="verifySplashScreenIsDisplayed" description="TC-SPLASH-01: Verify that the app launches successfully and the splash screen is displayed." finished-at="2025-07-08T03:12:24 IST" duration-ms="627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySplashScreenIsDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testhive.tests.SplashTests@54c562f7]" started-at="2025-07-08T03:12:24 IST" name="tearDown" finished-at="2025-07-08T03:12:25 IST" duration-ms="462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testhive.tests.SplashTests -->
+    </test> <!-- All Tests -->
+  </suite> <!-- TestHiveApp End-to-End Test Suite -->
+</testng-results>

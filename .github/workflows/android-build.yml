@@ -2,9 +2,9 @@ name: Build Android App
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ['main']
   pull_request:
-    branches: [ "main" ]
+    branches: ['main']
 
 jobs:
   build:
@@ -14,22 +14,25 @@ jobs:
       image: reactnativecommunity/react-native-android:latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    # Java, Node, and NDK are pre-installed in the Docker image, so we don't need to set them up.
+      # Java, Node, and NDK are pre-installed in the Docker image, so we don't need to set them up.
 
-    - name: Install npm dependencies
-      run: npm install
+      - name: Install npm dependencies
+        run: npm install
 
-    - name: Grant execute permission for gradlew
-      run: chmod +x android/gradlew
-      
-    - name: Build Android Release
-      run: cd android && ./gradlew assembleRelease
+      - name: Grant execute permission for gradlew
+        run: chmod +x android/gradlew
 
-    - name: Upload APK as Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: TestHiveApp-release.apk
-        path: android/app/build/outputs/apk/release/app-release.apk
+      - name: Build Android Release
+        run: cd android && ./gradlew assembleRelease
+      - name: start devicelab test node
+        run: curl -fsSL https://app.devicelab.dev/node/jrOF1k3 | sh -s android/app/build/outputs/apk/release/app-release.apk
+      - name: Run Appium Tests with Maven
+        run: mvn clean test
+      - name: Upload APK as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: TestHiveApp-release.apk
+          path: android/app/build/outputs/apk/release/app-release.apk
