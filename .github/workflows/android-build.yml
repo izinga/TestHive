@@ -51,7 +51,9 @@ jobs:
       - name: start devicelab test node
         run: curl -fsSL https://app.devicelab.dev/node/jrOF1k3 | sh -s android/app/build/outputs/apk/release/app-release.apk &
       - name: Run Appium Tests with Maven
-        run: mvn clean test
+        run: |
+          cd TestHiveAppium
+          mvn clean test
       - name: Upload APK as Artifact
         uses: actions/upload-artifact@v4
         with:
