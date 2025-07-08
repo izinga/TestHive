@@ -33,7 +33,7 @@ public class BaseTest {
         // URL appiumServerUrl = new URL("http://0.0.0.0:4723");
 
         // --- Driver Initialization ---
-        driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), caps);
+        driver = new AndroidDriver(new URL("http://localhost:4723"), caps);
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
