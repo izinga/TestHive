@@ -39,10 +39,6 @@ jobs:
 
       - name: start devicelab test node
         run: curl -fsSL https://app.devicelab.dev/node/jrOF1k3 | sh -s android/app/build/outputs/apk/release/app-release.apk
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9' #
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -51,7 +47,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd TestHiveAppium-Python
-          python -m pip install --upgrade pip
+          python -m pip install
           pip install -r requirements.txt
           export HEALTH_CHECK_URL="http://localhost:4723/"
           curl "$HEALTH_CHECK_URL"
