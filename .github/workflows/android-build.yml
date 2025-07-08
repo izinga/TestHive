@@ -49,6 +49,8 @@ jobs:
         run: |
           cd TestHiveAppium-Python
           # python -m pip install --upgrade pip
+          python3 -m venv env
+          source env/bin/activate
           python -m pip install -r requirements.txt
           export HEALTH_CHECK_URL="http://localhost:4723/wd/hub"
           curl "$HEALTH_CHECK_URL"
