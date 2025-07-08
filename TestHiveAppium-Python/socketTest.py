@@ -57,22 +57,19 @@ def validate_appium_session_readiness(base_url, timeout=90):
         }
     }
 
-    start_time = time.time()
-    while time.time() - start_time < timeout:
-        try:
-            # Attempt session creation (will fail but validates readiness)
-            response = requests.post(session_url, json=capabilities, timeout=30)
+    try:
+        # Attempt session creation (will fail but validates readiness)
+        response = requests.post(session_url, json=capabilities, timeout=30)
 
-            # Even if session fails, a proper response indicates readiness
-            if response.status_code in [200, 400, 500]:
-                return True
+        # Even if session fails, a proper response indicates readiness
+        if response.status_code in [200, 400, 500]:
+            return True
 
-        except requests.exceptions.RequestException as ext:
-            print("Traceback Info:", ext)
-            traceback.print_exc()
-            pass
+    except requests.exceptions.RequestException as ext:
+        print("Traceback Info:", ext)
+        traceback.print_exc()
+        pass
 
-        time.sleep(2)
 
     return False
 
