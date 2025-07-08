@@ -39,10 +39,29 @@ public class BaseTest {
             .setAppPackage("com.testhiveapp")
             .setAppActivity(".MainActivity");
 
-        URL appiumServerUrl = new URL("http://localhost:4723");
-        driver = new AndroidDriver( appiumServerUrl, options);
+        // URL appiumServerUrl = new URL("http://0.0.0.0:4723");
+        // driver = new AndroidDriver( appiumServerUrl, options);
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
+        try {
+                   URL appiumServerUrl = new URL("http://localhost:4723");
+                   System.out.println("Connecting to Appium server at: " + appiumServerUrl);
+
+                   driver = new AndroidDriver(appiumServerUrl, options);
+                   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
+                   System.out.println("AndroidDriver initialized successfully");
+               } catch (Exception e) {
+                   System.err.println("Failed to initialize AndroidDriver: " + e.getMessage());
+                   e.printStackTrace();
+
+                  URL  appiumServerUrl = new URL("http://0.0.0.0:4723");
+                  System.out.println("Connecting to Appium server at: " + appiumServerUrl);
+
+                  driver = new AndroidDriver(appiumServerUrl, options);
+                  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+               }
     }
 
     @AfterMethod
