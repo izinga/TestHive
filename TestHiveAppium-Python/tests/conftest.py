@@ -1,4 +1,5 @@
 import pytest
+import traceback
 from appium import webdriver
 from appium.options.android import UiAutomator2Options
 
@@ -26,6 +27,9 @@ def driver():
         appium_driver = webdriver.Remote("http://127.0.0.1:4723", options=options)
         # 'yield' passes the driver object to the test function
         yield appium_driver
+    except Exception as ext:
+        print("An error occurred:", type(ext).__name__, "–", ext) #
+        print(traceback.format_exc())
     finally:
         # This code runs after the test function has completed
         if appium_driver:
