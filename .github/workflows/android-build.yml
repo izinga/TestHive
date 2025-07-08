@@ -37,14 +37,6 @@ jobs:
 
       - name: start devicelab test node
         run: curl -fsSL https://app.devicelab.dev/node/jrOF1k3 | sh -s android/app/build/outputs/apk/release/app-release.apk
-      - name: Wait for server to start on port 4723
-        uses: GuillaumeFalourd/wait-sleep-action@v1
-        with:
-          time: '1' # for 1 minute
-        continue-on-error: true
-
-      - name: check appium is running or not
-        run: curl http://localhost:4723
       - name: Run Appium Tests with Maven
         run: |
           cd TestHiveAppium

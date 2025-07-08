@@ -18,11 +18,11 @@ public class BaseTest {
         // --- Desired Capabilities Setup ---
         DesiredCapabilities caps = new DesiredCapabilities();
 
-        caps.setCapability("platformName", "Android");
-        caps.setCapability("automationName", "UiAutomator2");
+        caps.setCapability("appium:platformName", "Android");
+        caps.setCapability("appium:automationName", "UiAutomator2");
 
-        caps.setCapability("appPackage", "com.testhiveapp");
-        caps.setCapability("appActivity", ".MainActivity");
+        caps.setCapability("appium:appPackage", "com.testhiveapp");
+        caps.setCapability("appium:appActivity", ".MainActivity");
 
         // --- IMPORTANT ---
         // You must build the TestHiveApp and install the APK on your device/emulator.
