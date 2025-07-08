@@ -46,17 +46,19 @@ jobs:
           python-version: '3.x'
       - name: Install dependencies
         run: |
+          cd TestHiveAppium-Python
           # python -m pip install --upgrade pip
-          python -m pip install -r TestHiveAppium-Python/equirements.txt
+          python -m pip install -r requirements.txt
           export HEALTH_CHECK_URL="http://localhost:4723/wd/hub"
           curl "$HEALTH_CHECK_URL"
-
-      - name: Run Appium Tests with PyTest
-        run: |
-          cd TestHiveAppium
-          export HEALTH_CHECK_URL="http://localhost:4723/wd/hub"
-          curl "$HEALTH_CHECK_URL
           pytest
+
+        # - name: Run Appium Tests with Maven
+        #   run: |
+        #     cd TestHiveAppium
+        #     export HEALTH_CHECK_URL="http://localhost:4723/"
+        #     curl "$HEALTH_CHECK_URL"
+        #     mvn clean test
         continue-on-error: true
       - name: Upload APK as Artifact
         uses: actions/upload-artifact@v4
