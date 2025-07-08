@@ -100,7 +100,7 @@ jobs:
     # Use the built image as a service container
     services:
       devicelab-proxy:
-        image: ghcr.io/${{ github.repository }}/devicelab-proxy:${{ github.sha }}
+        image: ghcr.io/${{ github.repository_owner }}/devicelab-proxy:${{ github.sha }}
         credentials:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
