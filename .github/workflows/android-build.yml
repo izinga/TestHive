@@ -40,10 +40,10 @@ jobs:
       - name: Wait for server to start on port 4723
         uses: GuillaumeFalourd/wait-sleep-action@v1
         with:
-          time: '30' # for 1 minute
+          time: '1m' # for 1 minute
 
       - name: check appium is running or not
-        run: curl http://localhost:4723/wd/hub
+        run: curl http://localhost:4723
       - name: Run Appium Tests with Maven
         run: |
           cd TestHiveAppium
