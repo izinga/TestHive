@@ -1,5 +1,7 @@
 package com.testhive.pages;
 
+
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
@@ -11,15 +13,14 @@ import java.util.List;
 
 public class LoginPage {
 
-    protected AndroidDriver driver;
-
+    protected AppiumDriver driver;
     // Element Locators identified by their accessibilityLabel
     private final AppiumBy usernameInput = (AppiumBy) AppiumBy.accessibilityId("username-input");
     private final AppiumBy passwordInput = (AppiumBy) AppiumBy.accessibilityId("password-input");
     private final AppiumBy loginButton = (AppiumBy) AppiumBy.accessibilityId("login-button");
     private final AppiumBy errorMessage = (AppiumBy) AppiumBy.accessibilityId("error-message");
 
-    public LoginPage(AndroidDriver driver) {
+    public LoginPage(AppiumDriver driver) {
         this.driver = driver;
     }
 

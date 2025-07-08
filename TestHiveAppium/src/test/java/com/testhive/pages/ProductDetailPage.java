@@ -1,5 +1,7 @@
 package com.testhive.pages;
 
+
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,7 +12,7 @@ import java.time.Duration;
 
 public class ProductDetailPage {
 
-    protected AndroidDriver driver;
+    protected AppiumDriver driver;
 
     // Element Locators
     private final AppiumBy backButton = (AppiumBy) AppiumBy.accessibilityId("back-button");
@@ -19,7 +21,7 @@ public class ProductDetailPage {
     private final By  productPrice = AppiumBy.xpath("//android.widget.ScrollView/android.view.ViewGroup/android.widget.TextView[1]");
     private final By  productDescription =AppiumBy.xpath("//android.widget.ScrollView/android.view.ViewGroup/android.widget.TextView[2]");
 
-    public ProductDetailPage(AndroidDriver driver) {
+    public ProductDetailPage(AppiumDriver driver) {
         this.driver = driver;
     }
 

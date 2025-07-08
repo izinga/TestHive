@@ -1,5 +1,7 @@
 package com.testhive.pages;
 
+
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +13,7 @@ import java.time.Duration;
 
 public class CartPage {
 
-    protected AndroidDriver driver;
+    protected AppiumDriver driver;
 
     // Element Locators
     private final AppiumBy cartScreen = (AppiumBy) AppiumBy.accessibilityId("cart-screen");
@@ -19,7 +21,7 @@ public class CartPage {
     private final AppiumBy grandTotalText = (AppiumBy) AppiumBy.accessibilityId("cart-total-text");
     private final AppiumBy checkoutButton = (AppiumBy) AppiumBy.accessibilityId("checkout-button");
 
-    public CartPage(AndroidDriver driver) {
+    public CartPage(AppiumDriver driver) {
         this.driver = driver;
     }
 

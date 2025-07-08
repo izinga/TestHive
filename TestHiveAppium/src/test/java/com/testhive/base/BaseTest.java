@@ -1,30 +1,34 @@
 package com.testhive.base;
 
-import io.appium.java_client.android.AndroidDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
+// import io.appium.java_client.android.AndroidDriver;
+// import org.openqa.selenium.remote.DesiredCapabilities;
+// import org.testng.annotations.AfterMethod;
+// import org.testng.annotations.BeforeMethod;
+
+// import java.net.MalformedURLException;
+// import java.net.URL;
+// import java.time.Duration;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.options.UiAutomator2Options;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
-import io.appium.java_client.android.options.UiAutomator2Options;
-import java.net.MalformedURLException;
-
 import java.net.URL;
+import java.net.MalformedURLException;
 import java.time.Duration;
-
 public class BaseTest {
 
-    protected AndroidDriver driver;
+    protected AppiumDriver driver;
 
     @BeforeMethod
     public void setUp() throws MalformedURLException {
         // --- Desired Capabilities Setup ---
-        DesiredCapabilities caps = new DesiredCapabilities();
+        UiAutomator2Options caps = new UiAutomator2Options();
 
-        caps.setCapability("appium:platformName", "Android");
-        caps.setCapability("appium:automationName", "UiAutomator2");
+        caps.setCapability("platformName", "Android");
+        caps.setCapability("automationName", "UiAutomator2");
 
-        caps.setCapability("appium:appPackage", "com.testhiveapp");
-        caps.setCapability("appium:appActivity", ".MainActivity");
+        caps.setCapability("appPackage", "com.testhiveapp");
+        caps.setCapability("appActivity", ".MainActivity");
 
         // --- IMPORTANT ---
         // You must build the TestHiveApp and install the APK on your device/emulator.
@@ -35,35 +39,19 @@ public class BaseTest {
         // URL appiumServerUrl = new URL("http://0.0.0.0:4723");
 
         // --- Driver Initialization ---
-        UiAutomator2Options options = new UiAutomator2Options()
-            .setAppPackage("com.testhiveapp")
-            .setAppActivity(".MainActivity");
+        // new URL ("http://127.0.0.1:4723/wd/hub")
+        driver = new AppiumDriver(new URL ("http://127.0.0.1:4723/wd/hub"), caps);
 
-        // URL appiumServerUrl = new URL("http://0.0.0.0:4723");
-        // driver = new AndroidDriver( appiumServerUrl, options);
-
-        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-
-        try {
-                   URL appiumServerUrl = new URL("http://localhost:4723");
-                   System.out.println("Connecting to Appium server at: " + appiumServerUrl);
-
-                   driver = new AndroidDriver(appiumServerUrl, options);
-                   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-
-                   System.out.println("AndroidDriver initialized successfully");
-               } catch (Exception e) {
-                   System.err.println("Failed to initialize AndroidDriver: " + e.getMessage());
-                   e.printStackTrace();
-
-                  URL  appiumServerUrl = new URL("http://0.0.0.0:4723");
-                  System.out.println("Connecting to Appium server at: " + appiumServerUrl);
-
-                  driver = new AndroidDriver(appiumServerUrl, options);
-                  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-               }
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
 
+    public static URL getUrl() {
+           try {
+               return new URL("http://0.0.0.0:4723");
+           } catch (MalformedURLException e) {
+               throw new RuntimeException(e);
+           }
+       }
     @AfterMethod
     public void tearDown() {
         // --- Test Cleanup ---

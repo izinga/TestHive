@@ -1,5 +1,7 @@
 package com.testhive.pages;
 
+
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
@@ -11,8 +13,7 @@ import java.util.List;
 
 public class ProductsPage {
 
-    protected AndroidDriver driver;
-
+    protected AppiumDriver driver;
     // Element Locators
     private final AppiumBy productScreen = (AppiumBy) AppiumBy.accessibilityId("products-screen");
     private final AppiumBy searchInput = (AppiumBy) AppiumBy.accessibilityId("search-input");
@@ -24,7 +25,7 @@ public class ProductsPage {
     private final AppiumBy menuButton = (AppiumBy) AppiumBy.accessibilityId("menu-button");
 
 
-    public ProductsPage(AndroidDriver driver) {
+    public ProductsPage(AppiumDriver driver) {
         this.driver = driver;
     }
 

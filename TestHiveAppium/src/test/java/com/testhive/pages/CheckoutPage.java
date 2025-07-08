@@ -1,11 +1,13 @@
 package com.testhive.pages;
 
+
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 
 public class CheckoutPage {
 
-    protected AndroidDriver driver;
+    protected AppiumDriver driver;
 
     // --- Address Page Locators ---
     private final AppiumBy addressScreen = (AppiumBy) AppiumBy.accessibilityId("address-screen");
@@ -23,7 +25,7 @@ public class CheckoutPage {
     private final AppiumBy successScreen = (AppiumBy) AppiumBy.accessibilityId("checkout-success-screen");
     private final AppiumBy backToHomeButton = (AppiumBy) AppiumBy.accessibilityId("back-to-home-button");
 
-    public CheckoutPage(AndroidDriver driver) {
+    public CheckoutPage(AppiumDriver driver) {
         this.driver = driver;
     }
 

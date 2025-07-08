@@ -1,5 +1,7 @@
 package com.testhive.pages;
 
+
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,13 +12,13 @@ import java.time.Duration;
 
 public class SplashScreenPage {
 
-    protected AndroidDriver driver;
+    protected AppiumDriver driver;
 
     // Element Locators
     private final AppiumBy splashScreen = (AppiumBy) AppiumBy.accessibilityId("splash-screen");
     private final By splashTitle =  AppiumBy.xpath("//android.widget.TextView[@text='TestHive']");
 
-    public SplashScreenPage(AndroidDriver driver) {
+    public SplashScreenPage(AppiumDriver driver) {
         this.driver = driver;
     }
 
