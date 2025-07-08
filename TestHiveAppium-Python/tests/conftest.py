@@ -24,7 +24,7 @@ def driver():
     # Initialize the Appium driver
     appium_driver = None
     try:
-        appium_driver = webdriver.Remote("http://127.0.0.1:4723", options=options)
+        appium_driver = webdriver.Remote("http://localhost:4723/wd/hub", options=options)
         # 'yield' passes the driver object to the test function
         yield appium_driver
     except Exception as ext:
