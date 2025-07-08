@@ -18,11 +18,11 @@ public class BaseTest {
         // --- Desired Capabilities Setup ---
         DesiredCapabilities caps = new DesiredCapabilities();
 
-        caps.setCapability("appium:platformName", "Android");
-        caps.setCapability("appium:automationName", "UiAutomator2");
+        caps.setCapability("platformName", "Android");
+        caps.setCapability("automationName", "UiAutomator2");
 
-        caps.setCapability("appium:appPackage", "com.testhiveapp");
-        caps.setCapability("appium:appActivity", ".MainActivity");
+        caps.setCapability("appPackage", "com.testhiveapp");
+        caps.setCapability("appActivity", ".MainActivity");
 
         // --- IMPORTANT ---
         // You must build the TestHiveApp and install the APK on your device/emulator.
@@ -33,7 +33,7 @@ public class BaseTest {
         // URL appiumServerUrl = new URL("http://0.0.0.0:4723");
 
         // --- Driver Initialization ---
-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), caps);
+        driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), caps);
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
