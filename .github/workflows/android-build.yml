@@ -8,10 +8,12 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     # Use a pre-configured Docker image with Android SDK, NDK, and Node.js
+    # container:
+    #   image: reactnativecommunity/react-native-android:latest
     container:
-      image: reactnativecommunity/react-native-android:latest
+      image: python:3.10-slim
 
     steps:
       - name: Checkout repository
