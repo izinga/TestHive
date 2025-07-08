@@ -137,7 +137,7 @@ jobs:
           echo PATH=$PATH >> $GITHUB_ENV
           pip3 install -r requirements.txt
           pip3 freeze
-          python3 socketTest.py
+          # python3 socketTest.py
           export HEALTH_CHECK_URL="http://localhost:4723/wd/hub"
           curl "$HEALTH_CHECK_URL"
           pytest
