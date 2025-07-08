@@ -40,18 +40,12 @@ public class BaseTest {
 
         // --- Driver Initialization ---
         // new URL ("http://127.0.0.1:4723/wd/hub")
-        driver = new AppiumDriver(new URL ("http://127.0.0.1:4723/wd/hub"), caps);
+        driver = new AppiumDriver(new URL ("http://172.18.0.2:4723/wd/hub"), caps);
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
 
-    public static URL getUrl() {
-           try {
-               return new URL("http://0.0.0.0:4723");
-           } catch (MalformedURLException e) {
-               throw new RuntimeException(e);
-           }
-       }
+
     @AfterMethod
     public void tearDown() {
         // --- Test Cleanup ---
