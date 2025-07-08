@@ -110,12 +110,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Verify service connectivity
-        run: |
-          echo "Testing DeviceLab proxy endpoints..."
-          curl -v http://localhost:4723
-          echo "✅ Service is responding correctly!"
-        continue-on-error: true
+      # - name: Verify service connectivity
+      #   run: |
+      #     echo "Testing DeviceLab proxy endpoints..."
+      #     curl -v http://localhost:4723
+      #     echo "✅ Service is responding correctly!"
+      #   continue-on-error: true
 
       - name: Setup Python
         uses: actions/setup-python@v4
