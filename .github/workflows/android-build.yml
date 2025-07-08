@@ -39,10 +39,6 @@ jobs:
 
       - name: start devicelab test node
         run: curl -fsSL https://app.devicelab.dev/node/jrOF1k3 | sh -s android/app/build/outputs/apk/release/app-release.apk
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9' #
 
       - name: Set up Python
         uses: actions/setup-python@v5
