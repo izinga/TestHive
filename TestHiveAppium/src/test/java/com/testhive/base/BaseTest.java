@@ -39,7 +39,7 @@ public class BaseTest {
             .setAppPackage("com.testhiveapp")
             .setAppActivity(".MainActivity");
 
-        URL appiumServerUrl = new URL("http://0.0.0.0:4723");
+        URL appiumServerUrl = new URL("http://localhost:4723");
         driver = new AndroidDriver( appiumServerUrl, options);
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));

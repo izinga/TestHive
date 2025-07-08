@@ -2,20 +2,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>dev.devicelab</groupId>
     <artifactId>TestHiveAppium</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <repositories>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-    </repositories>
+
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <selenium.version>4.34.0</selenium.version>
     </properties>
 
     <dependencies>
@@ -27,17 +22,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.34.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-remote-driver</artifactId>
-            <version>4.13.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-support</artifactId>
-            <version>4.12.0</version>
+            <version>${selenium.version}</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
@@ -66,7 +51,6 @@
                 <version>3.1.2</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <!-- This tells Maven to run the tests defined in testng.xml -->
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
