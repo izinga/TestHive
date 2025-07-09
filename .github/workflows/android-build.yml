@@ -1,5 +1,6 @@
 name: Build and Test with DeviceLab
-on: [push, pull_request]
+# on: [push, pull_request]
+# on: []
 
 jobs:
   # Your existing build job (assuming it's named 'build')

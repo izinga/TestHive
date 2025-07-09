@@ -1,0 +1,68 @@
+name: Build and Test with DeviceLab
+on: [push, pull_request]
+
+jobs:
+  # Your existing build job (assuming it's named 'build')
+  build:
+    runs-on: ubuntu-22.04
+    # Use a pre-configured Docker image with Android SDK, NDK, and Node.js
+    container:
+      image: reactnativecommunity/react-native-android:latest
+    # container:
+    #   image: python:3.10-slim
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install npm dependencies
+        run: npm install
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x android/gradlew
+
+      - name: Build Android Release
+        run: cd android && ./gradlew assembleRelease
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release-apk
+          path: android/app/build/outputs/apk/release/app-release.apk
+          retention-days: 1
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      # Test your local action
+      - name: Test DeviceLab Appium Action
+        uses: izinga/devicelab_appium@main
+        with:
+          devicelab-url: 'https://app.devicelab.dev/node/jrOF1k3' # Mock URL for testing
+          apk-artifact-name: 'app-release-apk'
+        continue-on-error: true
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          sleep 30
+          cd TestHiveAppium-Python
+          # python -m pip install --upgrade pip
+          python3 -m venv env
+          ls env/bin
+          . env/bin/activate
+          echo PATH=$PATH >> $GITHUB_ENV
+          pip3 install -r requirements.txt
+          pip3 freeze
+          # python3 socketTest.py
+          export HEALTH_CHECK_URL="http://localhost:4723/wd/hub"
+          curl "$HEALTH_CHECK_URL"
+          pytest
