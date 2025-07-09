@@ -14,8 +14,7 @@ def driver():
         "platformName": "Android",
         "appium:automationName": "UiAutomator2",# <-- IMPORTANT: Change this!
         "appium:appPackage": "com.testhiveapp",
-        "appium:appActivity": ".MainActivity",
-        "appium:noReset": True
+        "appium:appActivity": ".MainActivity"
     }
 
     # Convert capabilities to UiAutomator2Options object

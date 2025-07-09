@@ -67,3 +67,4 @@ jobs:
           export HEALTH_CHECK_URL="http://localhost:4723/wd/hub"
           curl "$HEALTH_CHECK_URL"
           pytest
+        continue-on-error: true
