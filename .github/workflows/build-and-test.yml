@@ -39,7 +39,7 @@ jobs:
       - name: Test DeviceLab Appium Action
         uses: izinga/devicelab_appium@main
         with:
-          devicelab-url: 'https://app.devicelab.dev/node/jrOF1k3' # Mock URL for testing
+          devicelab-url: 'https://app.devicelab.dev/node/Mw5DnRX' # Mock URL for testing
           apk-artifact-name: 'app-release-apk'
         continue-on-error: true
       - name: Setup Python
